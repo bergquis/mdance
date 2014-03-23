@@ -1,0 +1,39 @@
+body {
+    overflow: hidden;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+#editor { 
+    margin: 0;
+    border-top: 0.5rem solid #000;
+    border-bottom: 0.5rem solid #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+}
+
+#preview {
+    margin: 0;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+}
+
+@media print {
+    #editor {
+        display: none;
+    }
+
+    #preview {
+        left: 0;
+    }
+}
